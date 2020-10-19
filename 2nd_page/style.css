@@ -1,0 +1,127 @@
+/*2ページ目 */
+div.img_center {
+    text-align: center;
+}
+
+/* 背景画像大きさ */
+img {
+    width: 700px;
+    height: 700px;
+}
+
+/* 質問位置 */
+div p {
+    position: absolute;
+    top: -2%;
+    left: 42%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+div button {
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 15px;
+    z-index: 150;
+    left: 350px;
+    top: 20px;
+}
+
+/* 質問ふき出し */
+.arrow_box {
+    top: -400px;
+    left: 500px;
+    position: relative;
+    width: 300px;
+    height: 70px;
+    background: black;
+    padding: 50px;
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-shadow: 0px 1px 1px #adadad;
+}
+
+.arrow_box:after,
+.arrow_box:before {
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+}
+
+.arrow_box:after {
+    border-color: rgba(0, 0, 0, 0);
+    border-top-width: 20px;
+    text-shadow: 0px 1px 1px #adadad;
+}
+
+.arrow_box:after,
+.arrow_box:before {
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%
+}
+
+.arrow_box::after {
+    border-color: rgba(0, 0, 0, 0);
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    margin-left: -10px;
+    border-bottom-color: black;
+}
+
+.arrow_box:before {
+    border-color: rgba(30, 144, 255, 0);
+    border-top-width: 24px;
+    border-bottom-width: 24px;
+    border-left-width: 12px;
+    border-right-width: 12px;
+    margin-left: -12px;
+    margin-bottom: 2px;
+    border-bottom-color: white;
+}
+
+/* 選択肢部分 */
+.choice ul li {
+    position: ;
+    /* 位置 */
+    display: inline-block;
+    /*inline-blockにします*/
+    width: 80px;
+    /*幅も指定できる*/
+    padding: 10px 50;
+    /*余白も指定できる*/
+    margin: 10px 50;
+    /*余白も指定できる*/
+    list-style: none;
+    vertical-align: middle;
+    /*縦の表示位置も指定できる*/
+    background: transparent;
+    /*背景を透明に*/
+    font-size: 20px;
+    font-weight: bold;
+    /*文字を太字に*/
+    color: brown;
+    /*文字色を茶色に*/
+
+}
