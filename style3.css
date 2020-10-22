@@ -1,0 +1,96 @@
+/* 3ページ目 */
+div.background_img {
+    text-align: center;
+}
+
+img {
+    width: 700px;
+    height: 700px;
+    position: relative;
+}
+
+#return_btn {
+    position: absolute;
+    left: 420px;
+    top: 20px;
+}
+
+.arrow_box {
+    position: relative;
+    width: 500px;
+    height: 135px;
+    background: #000A11;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    top: -350px;
+    left: 500px;
+}
+
+.arrow_box:after,
+.arrow_box:before {
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+}
+
+.arrow_box:after {
+    border-color: rgba(0, 10, 17, 0);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    margin-left: -10px;
+    border-bottom-color: black;
+}
+
+.arrow_box:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    border-left-width: 12px;
+    border-right-width: 12px;
+    margin-left: -12px;
+    margin-bottom: 2px;
+    border-bottom-color: black;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    top: -285px;
+    left: 465px;
+}
+
+a {
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+article ul {
+    width: 600px;
+    margin: center;
+    display: flex;
+}
+
+article li {
+    color: black;
+    width: 25%;
+    transition: 0.2s;
+}
+
+article li:hover {
+    color: gray;
+}
