@@ -1,0 +1,94 @@
+/* 1ページ目 */
+/* トップ画像の位置 */
+div.img_center {
+    text-align: center;
+}
+
+/* トップ画像大きさ */
+img {
+    width: 700px;
+    height: 700px;
+}
+
+/* ♯タイトルの位置調整 */
+div p {
+    position: absolute;
+    top: -2%;
+    left: 42%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+div button {
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 15px;
+    z-index: 150;
+    /* topは数字が大きいほど下にいく */
+    top: 640px;
+    /* leftは数字が大きいほど画面左端にいく */
+    left: 710px
+}
+
+
+/* 吹き出しの位置、大きさ調整 */
+.arrow_box {
+    top: -430px;
+    left: 450px;
+    position: relative;
+    width: 500px;
+    height: 120px;
+    background: #000000;
+    padding: 50px;
+    text-align: center;
+    border: 2px solid #000000;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-shadow: 0px 1px 1px #ADADAD;
+}
+
+/* ここから下は吹き出し三角のコード */
+.arrow_box:after,
+.arrow_box:before {
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: 100%;
+    left: 45%;
+}
+
+.arrow_box:after {
+    border-color: rgba(0, 0, 0, 0);
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    margin-left: -10px;
+    border-bottom-color: #000000;
+}
+
+.arrow_box:before {
+    border-color: rgba(30, 144, 255, 0);
+    border-top-width: 24px;
+    border-bottom-width: 24px;
+    border-left-width: 12px;
+    border-right-width: 12px;
+    margin-left: -12px;
+    margin-bottom: 2px;
+    border-bottom-color: #000000;
+}
+
+table {
+    top: 50;
+    left: 300;
+}
